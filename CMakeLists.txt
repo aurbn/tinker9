@@ -432,9 +432,9 @@ elseif (GPU_LANG STREQUAL "OPENACC")
    string (APPEND CMAKE_CXX_FLAGS " --diag_suppress=11,177")
    # Compute Capability 60,70 -> ,cc60,cc70
    set (__T9_ACC_CCLST4) # ""
-   foreach (var ${T9_CUCCLIST})
-      string (APPEND __T9_ACC_CCLST4 ",cc${var}")
-   endforeach () # ,cc60,cc70
+    #foreach (var ${T9_CUCCLIST})
+    #   string (APPEND __T9_ACC_CCLST4 ",cc${var}")
+    #endforeach () # ,cc60,cc70
 endif ()
 
 
